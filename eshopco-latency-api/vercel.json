@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/latency",
+      "methods": ["GET"],
+      "dest": "src/main.py"
+    }
+  ]
+}
